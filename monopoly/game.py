@@ -92,7 +92,7 @@ class Game:
         """
         self.increase_round_number()
         for player in self._players:
-            self._display.show_message(f"It's {player.name()}'s turn")
+            self._display.show_message(f"\n It's {player.name()}'s turn")
             if self.show_options() == MENU_END:
                 self._display.show_message("End of game")
                 break
